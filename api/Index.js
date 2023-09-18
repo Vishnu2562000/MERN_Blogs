@@ -29,7 +29,7 @@ app.use("/test", (req, res) => {
   res.send("Hello world!");
 });
 
-const bucket = "mmagba-mern-blogs";
+const bucket = "mern-blogs-bucket";
 
 async function uploadToS3(path, originalFilename, mimetype) {
   const client = new S3Client({
