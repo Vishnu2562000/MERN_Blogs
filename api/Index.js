@@ -23,6 +23,9 @@ app.use(cookieParser());
 
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use("/uploads", express.static(__dirname + "/uploads"));
+app.use("/test", (req, res) => {
+  res.send("Hello world!");
+});
 
 const bucket = "mmagba-mern-blogs";
 
