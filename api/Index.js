@@ -186,8 +186,9 @@ app.delete("/api/delete/:id", async (req, res) => {
   });
 });
 
-if (process.env.API_PORT) {
-  app.listen(process.env.API_PORT);
-}
+// if (process.env.API_PORT) {
+//   app.listen(process.env.API_PORT);
+// }
+app.listen("https://mern-blogs-orpin.vercel.app");
 
 module.exports = app;
